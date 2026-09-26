@@ -28,6 +28,15 @@
 24. lastIndexOf()--- it returns last matching character index.if character is not present then it returns -1 
 25. concat() --- it add 2 or more strings into one string.
 
+# Array Methods
+1. push()---- it adds the element in the last index
+2. pop() --- it removes the last index element
+3. unshift()--- it adds an element in the starting index of an array
+4. shift()--- it removes the first index element
+5. splice() -- it can add or remove and update the array in any position.
+6. forEach()-- it can iterate an array but it can't return any value
+7. map() -- it can iterate an array , and as well as it can return an array.
+8. filter()-- it filter an array based on a condition, which element satisfied the condition that element is returned. Note: filter always returns new array.
 
 
 # Most Important JavaScript Concepts
