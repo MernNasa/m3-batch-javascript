@@ -86,5 +86,22 @@
 // // console.log(str.search("z"))
 // console.log(str.split("-"))
 
-let str=" abc "
-console.log("abc"===" a bc ".trim());
+// let str=" abc "
+// console.log("abc"===" a bc ".trim());
+
+
+// let str="abcda"
+// console.log(str.indexOf("a"))
+// console.log(str.lastIndexOf("a"))
+
+
+//! write a js program to check a given character is duplicate or not in a given string
+
+// function checkDuplicate(str,char){
+//     return str.indexOf(char)!==str.lastIndexOf(char)
+// }
+// console.log(checkDuplicate("abcda","b"))
+
+let str="abc"
+let str2="jdfgiudfhgi"
+console.log(str.concat(str2))

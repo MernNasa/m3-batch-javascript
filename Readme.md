@@ -1,3 +1,6 @@
+# JAVASCRIPT NOTES
+
+
 # String Methods
 1. length  --- it returns lenght of the string
 2. at()  ---- it accepts positive and negative index
@@ -19,6 +22,11 @@
 18. search --- it checks the character , if it presents it returns index value of that character. if not it return -1.
 19. split() -- it converts string into an array . it split the string based on the specified character.
 20. trim()--- it removes extra space characters from strating and ending only.
+21. trimStart()-- it removes space character from starting
+22. trimEnd() --- it removes space characters from ending
+23. indexOf() ---- it returns first matching character index.if character is not present then it returns -1
+24. lastIndexOf()--- it returns last matching character index.if character is not present then it returns -1 
+25. concat() --- it add 2 or more strings into one string.
 
 
 
