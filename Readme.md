@@ -37,6 +37,28 @@
 6. forEach()-- it can iterate an array but it can't return any value
 7. map() -- it can iterate an array , and as well as it can return an array.
 8. filter()-- it filter an array based on a condition, which element satisfied the condition that element is returned. Note: filter always returns new array.
+9. reduce()---reduce() is an array method used to process all elements of an array and produce one final value.
+10. some()---- some() checks whether at least one element satisfies a condition.
+11. every()---- every() checks whether all elements satisfy a condition.        
+
+# some() vs every()
+| Method    | Meaning      | Returns `true` when        |
+| --------- | ------------ | -------------------------- |
+| `some()`  | At least one | One or more elements match |
+| `every()` | All          | Every element matches      |
+
+12. sort()--- it arranges the array in ascending (a-b) or descending (b-a) order
+Note: it modifies the original array
+
+13. reverse()---- it reverses an array.it also modifies the original array.
+
+14. join()--- it joins every element in an array with the specified character. and it returns a single string.
+
+
+15. at()--- it helps to access an element in an array. it allows negative indexing also.
+
+
+
 
 
 # Most Important JavaScript Concepts
