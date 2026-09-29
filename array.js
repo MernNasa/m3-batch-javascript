@@ -86,7 +86,7 @@
 // console.log(arr.join("-"))
 
 
-let arr=["a","b","c","d","a"]
+// let arr=["a","b","c","d","a"]
 
 // console.log(arr[-1])
 // console.log(arr.at(-1))
@@ -100,7 +100,7 @@ let arr=["a","b","c","d","a"]
 //! write a js function to add the numbers in an array and return the sum.
 
 // input: ["a","b",2,4,"10"]----> 16
-function sumOfDigits(arr){
+// function sumOfDigits(arr){
     // let sum=0
     // for(let ele of arr){
     //     if(Number(ele)){
@@ -109,12 +109,76 @@ function sumOfDigits(arr){
     // }
     // console.log(sum)
 
-    return arr.reduce((acc,ele)=>Number(ele)?acc+Number(ele):0,0)
-}
-console.log(sumOfDigits(["a","b",2,4,"10"]))
+//     return arr.reduce((acc,ele)=>Number(ele)?acc+Number(ele):0,0)
+// }
+// console.log(sumOfDigits(["a","b",2,4,"10"]))
+
+
+// let arr=[1,2,3,4,5]
+
+// console.log(arr.includes(3))
+// console.log(arr.slice(-3))
+
+
+// let arr=[
+//     {
+//         user:"sundari"
+//     },
+//     {
+//         user:"mala",
+//         age:23
+//     },
+//     {
+//         user:"sheela"
+//     },
+//     {
+//         user:"mala",
+//         age:32
+//     }
+// ]
+
+// const res=arr.find((ele)=>ele.user==="mala")
+
+
+// console.log(res)
 
 
 
 
+// let arr=[[[[[[[[[[[[[[[[[[[[[[[[[9]]]]]]]]]]]]]]]]]]]]]]]]]
+// console.log(arr.flat(Infinity)[0])
+
+// let arr1=[1,2,3,4]
+// let arr2=[5,6,7,8,9]
+// let arr3=[5,6,["a","b"]]
+// console.log(arr1.concat(arr2,arr3))
 
 
+// let arr=[1,2,3,-4,5,-6]
+
+// const res=arr.flat(Infinity).reduce((acc,ele)=>acc+ele)
+// console.log(res)
+
+// const res=arr.flatMap((ele)=> ele<4?[]:[ele])
+// console.log(res)
+
+// let senetence=["hello world","javascript is fun"]
+
+// let res=[]
+// senetence.map((ele)=>{
+//     ele.split(" ").map((word)=>{
+//         res.push(word)
+//     })
+// })
+// console.log(res)
+
+// const re= senetence.flatMap((words)=>words.split(" "))
+// console.log(re)
+let arr=[1,2,3,-4,5,-6]
+
+console.log(arr.toSorted((a,b)=>a-b))
+
+
+// console.log(arr.toReversed())
+
+console.log(arr)

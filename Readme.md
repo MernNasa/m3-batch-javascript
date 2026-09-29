@@ -57,6 +57,26 @@ Note: it modifies the original array
 
 15. at()--- it helps to access an element in an array. it allows negative indexing also.
 
+16. indexOf()-- it returns the first matching eelement index.
+
+17. lastIndexOf()--- it returns the last matching element index.
+
+18. includes()--- it helps to check the given element is present or not in an array.
+
+19. slice()---- it helps to get a sub array from an original array. Note: it will not modified the original array
+
+20. find()--- it returns the first matching element
+
+21. flat()- it helps to reduce the nested arrays to single array
+
+22. concat()--- it merges more than 2 arrays into single array.
+
+23. flatMap()---> it combinesw the map and flat methods functionality.
+
+
+24. toReversed()--- it return a new array with reversed value, without effecting the original array
+
+25. toSorted() -- it returns a new array with sorted values, without effecting the original array.
 
 
 
