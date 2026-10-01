@@ -79,6 +79,77 @@ Note: it modifies the original array
 25. toSorted() -- it returns a new array with sorted values, without effecting the original array.
 
 
+# OOP's Concept
+
+# What is OOP?
+
+OOP stands for Object-Oriented Programming. It is a programming paradigm where we organize code using objects that contain data in the form of properties and behavior in the form of methods.
+JavaScript supports OOP using objects, classes, constructors, inheritance, encapsulation, polymorphism, etc.
+
+# What is a Class?
+A class is a blueprint or template for creating objects. It defines the properties and methods that objects created from that class can have.
+
+# What is an Object?
+An object is an instance of a class. It represents an actual entity and contains properties and methods.
+
+# What is the difference between Class and Object?
+| Class                               |           Object             |
+
+| Blueprint/template                  |              Actual instance |
+| Doesn't represent a specific entity | Represents a specific entity |
+| Used to create objects              |      Created using the class |
+
+
+# What are Properties?
+Properties are the data or characteristics of an object.
+
+# What are Methods?
+Methods are functions defined inside a class or object that represent the behavior or actions of that object.
+
+# What is a Constructor?
+A constructor is a special method in a JavaScript class that is automatically called when an object is created. It is mainly used to initialize the object's properties.
+
+
+# What is the new keyword?
+The new keyword is used to create a new object or instance from a class. It also causes the class constructor to execute.
+
+
+# What is this in JavaScript?
+this refers to the current object or execution context. Inside a class, it is commonly used to access the properties and methods of the current object.
+
+
+# What are the four pillars of OOP?
+
+The four commonly discussed pillars of OOP are Encapsulation, Inheritance, Polymorphism, and Abstraction.
+
+| Encapsulation | Bundling data and methods together |
+| Inheritance | Acquiring properties/methods from another class |
+| Polymorphism | Same interface/method behaving differently |
+| Abstraction | Hiding unnecessary implementation details |
+
+
+#  1. What is Inheritance?
+
+Inheritance allows one class to acquire properties and methods from another class. In JavaScript, we commonly use the extends keyword.
+
+# What is the extends keyword?
+extends is used to create a child class that inherits from a parent class.
+
+# What is the super keyword?
+super is used to access the parent class's constructor or methods from a child class.
+
+# 2. What is Polymorphism?
+Polymorphism means "many forms". It allows the same method to have different implementations in different classes.
+
+
+# 3. What is Abstraction?
+Abstraction means hiding unnecessary implementation details and exposing only the required functionality.
+
+# 4. What is Encapsulation?
+Encapsulation means bundling data and the methods that operate on that data together, while controlling how that data is accessed or modified.
+
+# What is a Static Method?
+A static method belongs to the class itself rather than to individual objects. We call it using the class name.
 
 
 # Most Important JavaScript Concepts
