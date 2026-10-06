@@ -85,22 +85,151 @@
 
 // 1.inheritance
 
-class Parent{
-    money=30000
-    mobile(){
-        console.log("parent mobile")
-    }
-    static debits(){
-        console.log("parent loan")
-    }
-}
+// class Parent{
+//     money=30000
+//     mobile(){
+//         console.log("parent mobile")
+//     }
+//     static debits(){
+//         console.log("parent loan")
+//     }
+// }
 
-class Child extends Parent{
+// class Child extends Parent{
 
-}
+// }
 
 // const c1=new Child()
 // console.log(c1.money)
 // c1.mobile()
-Parent.debits()
-Child.debits()
+// Parent.debits()
+// Child.debits()
+
+
+// class Parent{
+   
+//     constructor(){
+       
+//     }
+
+// }
+
+// class Child extends Parent {
+//     name;
+//     age;
+//     money;
+
+//     constructor(name,age,money){
+//         super()
+//       this.name=name;
+//       this.age=age;
+//       this.money=money;
+      
+//     }
+
+//     printDetails(){
+//         console.log("Name :"+this.name)
+//         console.log("Age :"+this.age)
+//         console.log("Money :"+this.money)
+//     }
+
+    
+// }
+
+// const c1=new Child("a",23,4000)
+// c1.printDetails()
+
+
+
+
+// class Human{
+    
+//     speak(){
+//         console.log("human you can speak")
+//     }
+
+//     walk(){
+//         console.log("human you can walk")
+//     }
+// }
+
+// class Sundari extends Human{
+//     // method overridding (run time Polymorphism)
+//     speak(){
+//         console.log("i am speaking")
+//     }
+//     walk(){
+//         console.log("i am walking")
+//     }
+// }
+
+// const s1= new Sundari()
+// s1.speak()
+
+// const h1= new Human()
+// h1.speak()
+
+// class Calculator{
+//     // add(x,y){
+//     //     console.log(x+y)
+//     // }
+//     // add(x,y,z){
+//     //     console.log(x+y+z)
+//     // }
+
+//     add(...args){
+//         if(args.length===2){
+//             console.log(args[0]+args[1])
+//         }
+//         else if(args.length === 3){
+//             console.log(args[0]+args[1]+args[2])
+//         }
+//         else{
+//             console.log(args.reduce((acc,ele)=>acc+ele))
+//         }
+//     }
+
+// }
+
+// const c1= new Calculator()
+// c1.add(30,40)
+// c1.add(30,40,40)
+// c1.add(30,40,40,20,60,50)
+
+// class Bank{
+//     #balance=1000
+
+//     getbalance(){
+//         console.log(this.#balance)
+//     }
+//     deposit(money){
+//         this.#balance=this.#balance+money
+//     }
+
+// }
+
+// const b1=new Bank()
+// b1.deposit(5000)
+// b1.getbalance()
+
+
+
+class CoffeeMachine{
+
+    #boilWater(){
+        console.log("boling water")
+    }
+    #boilmilk(){
+        console.log("milk is boiling")
+    }
+    makeCoffee(type){
+        this.#boilWater()
+        this.#boilmilk()
+        if(type==="cold coffee"){
+        console.log(type +" coffee is ready")
+        }
+    }
+}
+
+const c1= new CoffeeMachine()
+c1.makeCoffee("cold coffee")
