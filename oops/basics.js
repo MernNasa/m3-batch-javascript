@@ -214,22 +214,79 @@
 
 
 
-class CoffeeMachine{
+// class CoffeeMachine{
 
-    #boilWater(){
-        console.log("boling water")
+//     #boilWater(){
+//         console.log("boling water")
+//     }
+//     #boilmilk(){
+//         console.log("milk is boiling")
+//     }
+//     makeCoffee(type){
+//         this.#boilWater()
+//         this.#boilmilk()
+//         if(type==="cold coffee"){
+//         console.log(type +" coffee is ready")
+//         }
+//     }
+// }
+
+// const c1= new CoffeeMachine()
+// c1.makeCoffee("cold coffee")
+
+
+
+
+
+// const userMethods={
+//     greet(){
+//         console.log("hello! " + this.name)
+//     }
+// }
+
+// const user1={
+//     name:"sundari"
+// }
+// const user2={
+//     name:"mala"
+// }
+
+// Object.setPrototypeOf(user1,userMethods)
+// Object.setPrototypeOf(user2,userMethods)
+
+// user1.greet()
+// user2.greet()
+
+
+class Person{
+    constructor(name){
+        this.name=name
     }
-    #boilmilk(){
-        console.log("milk is boiling")
+    greet(){
+        console.log("hello "+this.name )
     }
-    makeCoffee(type){
-        this.#boilWater()
-        this.#boilmilk()
-        if(type==="cold coffee"){
-        console.log(type +" coffee is ready")
-        }
+    speak(){
+        console.log("speaking")
     }
 }
 
-const c1= new CoffeeMachine()
-c1.makeCoffee("cold coffee")
+const p1=new Person("sundari")
+p1.greet()
+const p2=new Person("mala")
+p2.greet()
+
+//! funtion constructor
+// function Person(name){
+//     this.name=name
+// }
+// ! we have to add the reusable methods to prototype manualy.
+// Person.prototype.greet=function(){
+//     console.log("hello "+ this.name)
+// }
+// Person.prototype.speak=function(){
+//     console.log("speaking")
+// }
+// const p1= new Person("sundari")
+// const p2= new Person("mala")
+// p1.greet()
+// p2.greet()
