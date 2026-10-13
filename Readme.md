@@ -272,3 +272,140 @@ Performance optimization
 Modules
 Testing
 Design patterns
+
+
+
+
+# DOM
+The DOM (Document Object Model) is a programming interface that represents a web page's HTML structure as a tree of objects, allowing languages like JavaScript to read, manipulate, and change the page dynamically.
+
+# Document: Refers to the HTML web page itself.
+
+# Object: Every element on the page (like a header, link, or paragraph) is converted into an object that has properties you can change.
+
+# Model: The page is structured like a hierarchical family tree (often called the DOM Tree) featuring parent, child, and sibling relationships.
+
+
+# The DOM Tree Hierarch
+
+
+window (The Browser Window)
+          │
+       document (The Web Page)
+          │
+        <html> (Root Element)
+       ┌──┴──┐
+    <head> <body>
+      │      ├─── <h1> (Heading Node)
+   <title>   ├─── <p>  (Paragraph Node)
+             └─── <button> (Interactive Node)
+
+Note : where every part of the page is a node.
+
+
+# What are the main concepts in the DOM?
+
+1. DOM selection (selectors)
+Finding HTML elements using IDs, classes, tags, CSS selectors, and other methods.
+
+2. DOM manipulation
+Changing text, HTML, CSS classes, attributes, styles, or the structure of a page.
+
+3. DOM traversal
+Moving between parent, child, sibling, and other related nodes.
+
+4. DOM events
+Responding to clicks, typing, form submission, mouse movement, keyboard input, and more.
+
+5. DOM nodes and properties
+Understanding elements, text nodes, attributes, child nodes, parent nodes, and document objects.
+
+6. DOM creation and removal
+Creating elements, inserting them into the page, replacing them, and deleting them.
+
+7. DOM styling and attributes
+Working with inline styles, CSS classes, HTML attributes, and element properties.
+
+
+# What is a DOM node?
+
+A node is an object representing a part of a DOM tree.
+
+# What is the difference between a node and an element?
+An element is a specific kind of node. All elements are nodes, but not all nodes are elements.
+
+# What are DOM selectors?
+DOM selectors are methods used to find HTML elements so that JavaScript can work with them.
+
+# The most important DOM selection methods
+1. getElementById()---One element or null----Not a collection
+2. getElementsByClassName()---HTMLCollection---Live
+3. getElementsByTagName()---HTMLCollection---Live
+4. querySelector()---First element or null----Not a collection
+5. querySelectorAll()----NodeList-----Static
+
+
+# What is DOM manipulation?
+
+DOM manipulation means changing the content, structure, attributes, or appearance of elements in a document using JavaScript.
+
+Once you select an element, you can modify it in several ways:
+1. Change text.
+2. Change HTML content.
+3. Change attributes.
+4. Change CSS classes.
+5. Change inline styles.
+6. Create new elements.
+7. Insert elements.
+8. Remove elements.
+9. Replace existing elements.
+
+
+# Changing text content
+1. textContent
+2. innerText
+3. innerHTML
+# Difference between textContent, innerText, and innerHTML
+
+# Security warning:
+ Never put untrusted user input directly into innerHTML. It can introduce cross-site scripting (XSS) vulnerabilities. Prefer textContent for plain text, and use a trusted HTML sanitization approach if you must render user-provided HTML.
+
+
+# Changing HTML attributes
+
+1. getAttribute()-   Reads an attribute.
+2. setAttribute()--Creates or updates an attribute.
+3. removeAttribute()--Removes an attribute.
+4. hasAttribute()---Checks whether an attribute exists.
+
+# Changing CSS styles
+
+You can change inline styles through the style property.
+Notice that CSS properties with hyphens generally become camelCase in JavaScript:
+background-color------backgroundColor
+
+
+element.style generally reads inline styles, whereas getComputedStyle(element) reads the computed style values.
+
+# Using classList
+
+1. classList.add()---Adds one or more classes.
+2. classList.remove()----Removes classes.
+3. classList.toggle()---Adds a class if it isn't present, or removes it if it is.
+This is especially useful for opening and closing menus.
+4. classList.contains()--Checks whether a class exists.
+5. classList.replace()----Replaces one class with another.
+
+# Creating, inserting, and removing elements
+
+1. Creating new elements
+document.createElement()
+
+# Adding elements to the page
+1. append()---Adds nodes or text to the end of a parent element. one or more childs ata atime
+
+2. appendChild()---Also appends a node to the end of a parent. it adds only one child
+
+3. prepend() ---Inserts content at the beginning.
+
+4. 
